@@ -3,8 +3,19 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "localhost.ionatec.com.br",
+        protocol: "https",
+        hostname: "**",
+      },
+      {
         protocol: "http",
+        hostname: "localhost.ionatec.com.br",
+        port: "",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "static.orulo.com.br",
+        pathname: "**",
       },
     ],
   },
